@@ -22,11 +22,10 @@ exports.handler = prepareFlexFunction(requiredParameters, async (context, event,
   try {
     const messageParams = {
       contentSid: ContentSid,
-      contentVariables: ContentVariables,
       identity: Identity
     };
 
-    if (ContentVariables) {
+    if (ContentVariables && ContentVariables !== '') {
       try {
         messageParams.contentVariables = typeof ContentVariables === 'string'
           ? JSON.parse(ContentVariables)
