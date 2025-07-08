@@ -20,7 +20,7 @@ class SendTemplateMessageService extends ApiService {
     };
     try {
       const response = await this.fetchJsonWithReject<SendTemplateMessageResponse>(
-        `${this.serverlessProtocol}://${this.serverlessDomain}/features/switch-to-whatsapp-call/flex/send-template.js`,
+        `${this.serverlessProtocol}://${this.serverlessDomain}/features/switch-to-whatsapp-call/flex/send-template`,
         {
           method: 'post',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
