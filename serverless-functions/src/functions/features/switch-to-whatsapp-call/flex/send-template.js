@@ -5,8 +5,7 @@ const { prepareFlexFunction, extractStandardResponse } = require(Runtime.getFunc
 const requiredParameters = [
   { key: 'ConversationSid', purpose: 'sid of the conversation' },
   { key: 'Identity', purpose: 'sender identity' },
-  { key: 'ContentSid', purpose: 'sid of the Content Template' },
-  { key: 'ContentVariables', purpose: 'variables for the content'}
+  { key: 'ContentSid', purpose: 'sid of the Content Template' }
 ];
 
 exports.handler = prepareFlexFunction(requiredParameters, async (context, event, callback, response, handleError) => {
