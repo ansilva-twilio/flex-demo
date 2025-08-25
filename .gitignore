@@ -1,3 +1,7 @@
+# Local files
+deleteAllConversations.js
+getRecordingAndWorker.js
+
 # Logs
 logs
 *.log
